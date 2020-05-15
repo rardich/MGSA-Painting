@@ -1,9 +1,7 @@
 from flask import Flask, render_template, url_for, flash, redirect
-from flask_frozen import Freezer
 
 app = Flask(__name__)
 
-freezer = Freezer(app)
 
 # TODO Offload this to JSON file
 # Hardcoded positions, sizes, and links for art in galleries
@@ -204,5 +202,4 @@ def art(art):
     return render_template('art.html', art=art, profiles=profiles, artwork=artwork)
 
 if __name__ == '__main__':
-    #app.run(debug=True)
-    freezer.freeze()
+    app.run(debug=True)
