@@ -2,19 +2,84 @@ from flask import Flask, render_template, url_for, flash, redirect
 
 app = Flask(__name__)
 
-# Positions, sizes, and links for art in galleries
+# TODO Offload this to JSON file
+# Hardcoded positions, sizes, and links for art in galleries
 artwork = {
-    "room1": [],
-    "room2": [],
-    "room3": [],
-    "room4": [],
-    "room5": [],
-    "room6": [],
-    "room7": [],
-    "room8": []
+    # Room #: [Artwork, Width, Height, Top, Left]
+    "room1": [["No Diving, 50x44"], ["Kenny and Co., 16x20"],["Ryan, 24x36"]],
+    "room2": [["Beauty Parlor, 52x44"],["Ye Ye and Nai Nai, 24x36"],["Dan-Anh, 24x36"]],
+    "room3": [["Red/Green Lattice Attached Canvas, 42x38"],["Drip Diamond with X, 16x20"],["Purple Wash Diptych, 16x2"],["8 Green Zeros, 24x36"],["Drip Grid 9 Conjoined Canvases, 20x40"]],
+    "room4": [["Anxiety, (9)8x10"],["Stores of Moldy Food, 16x18"],["Sad, Sole, Fridge, 16x22"]],
+    "room5": [["Systematic Discrepancies, 33x33"],["Disposable Bodies, 16x22"],["Nostalgia, (9)8x10"]],
+    "room6": [["From Outside, 36x48"],["From Inside, 36x48"]],
+    "room7": [["Projected, 48x60"],["Broken Medicine Cabinet, 13x16"],["From Both Outside and Inside, 36x48"]],
+    "room8": [["Stop Series 1a, (3)18x24"],["Stop Series 1b, (3)18x24"],["Stop Series 1c, (3)18x24"],["“Shut up!” ,18x24"],["The Spirit of the Forest, 16x20"],["Untitled, 3x3"],["Isolation, 18x24"]],
+    "links": {
+        "From Outside, 36x48": "../static/artwork/bri 1.jpg",
+        "From Inside, 36x48": "../static/artwork/bri 2.jpg",
+        "From Both Outside and Inside, 36x48": "../static/artwork/bri 3.jpg",
+        "Kenny and Co., 16x20": "../static/artwork/david 2.jpg", 
+        "Ryan, 24x36": "../static/artwork/david 4.jpg", 
+        "Dan-Anh, 24x36": "../static/artwork/david 1.jpg", 
+        "Ye Ye and Nai Nai, 24x36": "../static/artwork/david 3.jpg",
+        "Disposable Bodies, 16x22": "../static/artwork/desiree 4.jpg", 
+        "Sad, Sole, Fridge, 16x22": "../static/artwork/desiree 1.jpg",
+        "Stores of Moldy Food, 16x18": "../static/artwork/desiree 2.jpg",
+        "Systematic Discrepancies, 33x33": "../static/artwork/desiree 3.jpg",
+        "Stop Series 1a, (3)18x24": "../static/artwork/giancarlo 1.jpg",
+        "Stop Series 1b, (3)18x24": "../static/artwork/giancarlo 2.jpg",
+        "Stop Series 1c, (3)18x24": "../static/artwork/giancarlo 3.jpg",
+        "“Shut up!” ,18x24": "../static/artwork/giancarlo 4.jpg",
+        "Purple Wash Diptych, 16x2": "../static/artwork/jon 1.jpg",
+        "Drip Grid 9 Conjoined Canvases, 20x40": "../static/artwork/jon 2.jpg",
+        "Drip Diamond with X, 16x20": "../static/artwork/jon 4.jpg", 
+        "8 Green Zeros, 24x36": "../static/artwork/jon 1.jpg", 
+        "Red/Green Lattice Attached Canvas, 42x38": "../static/artwork/jon 5.jpg",
+        "No Diving, 50x44": "../static/artwork/lauren 1.jpg", 
+        "Beauty Parlor, 52x44": "../static/artwork/lauren 2.jpg",
+        "Broken Medicine Cabinet, 13x16": "../static/artwork/liz 1.jpg", 
+        "Projected, 48x60": "../static/artwork/liz 2.jpg",
+        "Nostalgia, (9)8x10": "../static/artwork/sera 1.jpg", 
+        "Anxiety, (9)8x10": "../static/artwork/sera 2.jpg",
+        "Untitled, 3x3": "../static/artwork/shannon 2.jpg", 
+        "Isolation, 18x24": "../static/artwork/shannon 3.jpg", 
+        "The Spirit of the Forest, 16x20": "../static/artwork/shannon 1.jpg"
+    },
+    "artists": {
+        "From Outside, 36x48": "Briana Mclaurin",
+        "From Inside, 36x48": "Briana Mclaurin",
+        "From Both Outside and Inside, 36x48": "Briana Mclaurin",
+        "Kenny and Co., 16x20": "David Yang", 
+        "Ryan, 24x36": "David Yang", 
+        "Dan-Anh, 24x36": "David Yang", 
+        "Ye Ye and Nai Nai, 24x36": "David Yang",
+        "Disposable Bodies, 16x22": "Deziree Jordyn", 
+        "Sad, Sole, Fridge, 16x22": "Deziree Jordyn",
+        "Stores of Moldy Food, 16x18": "Deziree Jordyn",
+        "Systematic Discrepancies, 33x33": "Deziree Jordyn",
+        "Stop Series 1a, (3)18x24": "Giancarlo Venturini",
+        "Stop Series 1b, (3)18x24": "Giancarlo Venturini",
+        "Stop Series 1c, (3)18x24": "Giancarlo Venturini",
+        "“Shut up!” ,18x24": "Giancarlo Venturini",
+        "Purple Wash Diptych, 16x2": "Jon Lewis",
+        "Drip Grid 9 Conjoined Canvases, 20x40": "Jon Lewis",
+        "Drip Diamond with X, 16x20": "Jon Lewis", 
+        "8 Green Zeros, 24x36": "Jon Lewis", 
+        "Red/Green Lattice Attached Canvas, 42x38": "Jon Lewis",
+        "No Diving, 50x44": "Lauren Krasnoff", 
+        "Beauty Parlor, 52x44": "Lauren Krasnoff",
+        "Broken Medicine Cabinet, 13x16": "Liz Pope", 
+        "Projected, 48x60": "Liz Pope",
+        "Nostalgia, (9)8x10": "Serafina Kennedy", 
+        "Anxiety, (9)8x10": "Serafina Kennedy",
+        "Untitled, 3x3": "Shannon Heylin", 
+        "Isolation, 18x24": "Shannon Heylin", 
+        "The Spirit of the Forest, 16x20": "Shannon Heylin"
+    }
 }
 
-# Names, bios, artwork, instagrams
+# TODO Offload this to JSON file
+# Hardcoded names, bios, artwork, instagrams
 profiles = [
     {
         "name": "Briana Mclaurin",
@@ -28,7 +93,7 @@ profiles = [
         "bio": "Growing up I was often made to feel not quite American enough for my white friends and classmates, yet not quite Asian enough for my family. I think in the past, this sort of otherness has led me to withdraw from meaningful social interaction, straining my relationships with both my family members and my peers. Now, however, with the rise of racially charged violence against Asians due to COVID-19, I seek to try and empower those who look like me and have experienced the same things as me in any way possible. These portraits are a way for me to voice my pride in the unique and important status of being a first generation Asian American.",
         "artwork": ["Kenny and Co., 16x20", "Ryan, 24x36", "Dan-Anh, 24x36", "Ye Ye and Nai Nai, 24x36"],
         "instagram": "idem.paris",
-        "picture": ""
+        "picture": "../static/headshots/David Yang.jpg"
     },
     {
         "name": "Deziree Jordyn",
@@ -40,7 +105,7 @@ profiles = [
     {
         "name": "Giancarlo Venturini",
         "bio": "Giancarlo Venturini is a visual artist from a small town named Boonton, New Jersey. Through painting and sculpture Giancarlo has created works surrounding his experience that stems from the camaraderie of small town life. Having the opportunity to befriend so many diverse people growing up, he started to take an interest in their cultures. In high school one of his best friends started teaching him Polish and this sparked great interest for him. Doing daily lessons, this led him to travel to and learn the language of Poland. Giancarlo now works to promote and preserve a culture that he has admired through painting and sculpture in an attempt to educate while still being humorous. Giancarlo went on to receive his B.F.A. from Rutgers University in 2021. He continues to create work and show in exhibitions.",
-        "artwork": ["Stop Series 1, (3)18x24", "“Shut up!” ,18x24"],
+        "artwork": ["Stop Series 1a, (3)18x24", "Stop Series 1b, (3)18x24", "Stop Series 1c, (3)18x24", "“Shut up!” ,18x24"],
         "instagram": "gian_venturini",
         "picture": "../static/headshots/Giancarlo Venturini.jpg"
     },
@@ -82,17 +147,21 @@ profiles = [
 ]
 
 @app.route('/')
-@app.route('/<id>')
+@app.route('/room/<id>')
 def gallery(id=1):
     return render_template('gallery.html', page = int(id), totalpages = 8, background=f"../static/galleries/room {id}.jpg", artwork=artwork[f"room{id}"])
 
+@app.route('/mobile')
+def mobile():
+    return render_template('mobile.html', artwork=artwork)
+
 @app.route('/artists')
 def artists():
-    return render_template('artists.html', profiles=profiles)
+    return render_template('artists.html', profiles=profiles, artwork=artwork)
 
-@app.route('/<art>')
-def art():
-    return
+@app.route('/artwork/<art>')
+def art(art):
+    return render_template('art.html', art=art, profiles=profiles, artwork=artwork)
 
 if __name__ == '__main__':
     app.run(debug=True)
