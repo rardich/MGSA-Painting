@@ -14,8 +14,9 @@ artwork = {
     "room8": []
 }
 
+@app.route('/')
 @app.route('/<id>')
-def gallery(id):
+def gallery(id=1):
     return render_template('gallery.html', title=f"Room {id}", page = int(id), totalpages = 8, background=f"../static/galleries/room {id}.jpg", artwork=artwork[f"room{id}"])
 
 @app.route('/artists')
