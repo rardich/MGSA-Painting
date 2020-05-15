@@ -67,20 +67,22 @@
     <!-- End Top Navbar -->
 
     <!-- Artwork -->
-    <div class="container mb-3">
-        {% for art in artwork["links"] %}
-        <div class="card mt-3 bg-white shadow border-0">
-            <div class="" style="display: flex; justify-content: center; text-align: center">
-                <a href="{{url_for('art', art=art)}}">
-                    <img src="{{artwork['links'][art]}}" width="400" height="400" style="max-width: 100%; height: auto;">
-                    <div class="mt-2">
-                        <h6> <b>{{art}} </b></h6>
-                        <h6> <b>{{artwork['artists'][art]}}</b></h6>
-                    </div>
-                </a>
+    <div class="container mb-3 justify-content-center">
+        <div class="row justify-content-center ml-4 mr-4">
+            {% for art in artwork["links"] %}
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="{{url_for('art', art=art)}}">
+                        <img src="{{artwork['links'][art]}}" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>{{art}} </b></h6>
+                            <h6> <b>{{artwork['artists'][art]}}</b></h6>
+                        </div>
+                    </a>
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
     <!-- End Artwork -->
     <!--   Core JS Files   -->

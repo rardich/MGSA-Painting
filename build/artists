@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Artists - MGSA Painting Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../static/img/rutgers.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="../static/css/font-awesome.css" rel="stylesheet" />
+    <!-- Theme CSS -->
+    <link href="../static/css/argon-design-system.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: #f4f5f7;">
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-default">
+        <div class="container">
+            <a class="navbar-brand" href="/room/1">MGSA Painting Gallery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a class="navbar-brand" href="/room/1" style="color:#172b4d">
+                                MGSA Painting Gallery
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item mt-1 mb-1">
+                        <a href="/artists" class="btn btn-secondary btn-icon">
+                            <span class="btn-inner--icon">
+                                <i class="fa fa-paint-brush mr-2"></i>
+                            </span>
+                            <span class="nav-link-inner--text">Artist Profiles</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 mb-1">
+                        <a href="https://github.com/rardich/MGSA-Painting" target="_blank" class="btn btn-default btn-icon">
+                            <span class="btn-inner--icon">
+                                <i class="fa fa-github mr-2"></i>
+                            </span>
+                            <span class="nav-link-inner--text">Source Code</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Navbar -->
+    <!-- Artist Cards -->
+    <div class="mb-4">
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Briana Mclaurin">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Briana McLaurin.jpg" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Briana Mclaurin</h3>
+                            <h6> As an artist, the goal of my work is to tell a story; to tell a story that is otherwise difficult to put into words. The goal is to tackle meaningful subjects and ideas and create something that would personify whatever I envision in my head. I generally paint intimate portraits of my family members, experimenting with the various colors in their brown skin. In most of my work, the central motifs are the expressive and colorful palette, along with the thick application of paint to represent texture in certain areas. The inspiration for my art primarily stems from artists such as Beauford Delaney, Jacob Lawrence, Barkley L. Hendricks, Amy Sherald, Kerry James Marshall, and Jordan Casteel. The way that each artist used their colors to create such beautiful and inspiring images is truly fascinating. Their ability to manipulate and experiment with color and texture is one thing that I will always aim to build upon and continue in my own work. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/From%20Outside%2C%2036x48"><button class='btn btn-default btn-sm mt-3 mr-2' >From Outside, 36x48</button></a>
+                                
+                                <a href="/artwork/From%20Inside%2C%2036x48"><button class='btn btn-default btn-sm mt-3 mr-2' >From Inside, 36x48</button></a>
+                                
+                                <a href="/artwork/From%20Both%20Outside%20and%20Inside%2C%2036x48"><button class='btn btn-default btn-sm mt-3 mr-2' >From Both Outside and Inside, 36x48</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/briana_mclaurin/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@briana_mclaurin</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="David Yang">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/David Yang.jpg" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>David Yang</h3>
+                            <h6> Growing up I was often made to feel not quite American enough for my white friends and classmates, yet not quite Asian enough for my family. I think in the past, this sort of otherness has led me to withdraw from meaningful social interaction, straining my relationships with both my family members and my peers. Now, however, with the rise of racially charged violence against Asians due to COVID-19, I seek to try and empower those who look like me and have experienced the same things as me in any way possible. These portraits are a way for me to voice my pride in the unique and important status of being a first generation Asian American. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/Kenny%20and%20Co.%2C%2016x20"><button class='btn btn-default btn-sm mt-3 mr-2' >Kenny and Co., 16x20</button></a>
+                                
+                                <a href="/artwork/Ryan%2C%2024x36"><button class='btn btn-default btn-sm mt-3 mr-2' >Ryan, 24x36</button></a>
+                                
+                                <a href="/artwork/Dan-Anh%2C%2024x36"><button class='btn btn-default btn-sm mt-3 mr-2' >Dan-Anh, 24x36</button></a>
+                                
+                                <a href="/artwork/Ye%20Ye%20and%20Nai%20Nai%2C%2024x36"><button class='btn btn-default btn-sm mt-3 mr-2' >Ye Ye and Nai Nai, 24x36</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/idem.paris/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@idem.paris</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Deziree Jordyn">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Deziree Jordyn.png" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Deziree Jordyn</h3>
+                            <h6> My series is a response to the circumstances occurring due to COVID-19. From food shortages because of impulse hoarding to displacement of families for various reasons. Topics such as displacement and comfort (or lack thereof) are being explored. I am curious about the cause and the effect of people who are considering solely themselves in a time such as right now. As well as what’s happening to those that don’t have control over their situation for reasons of but not limited to status, class, and race. Privilege and systematic issues are exposed during nationwide hardships but rarely ever addressed and worked on. Considering how to expose such issues in a way that becomes easy to talk about is necessary. In turn it would allow for structured conversations about what could and should be done. Issues like literal tons of food going to waste while families are starving. There is a growing rate of homelessness while hotels and motels remain closed from lack of business. Why are there so many discrepancies that allow for human neglect? </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/Disposable%20Bodies%2C%2016x22"><button class='btn btn-default btn-sm mt-3 mr-2' >Disposable Bodies, 16x22</button></a>
+                                
+                                <a href="/artwork/Sad%2C%20Sole%2C%20Fridge%2C%2016x22"><button class='btn btn-default btn-sm mt-3 mr-2' >Sad, Sole, Fridge, 16x22</button></a>
+                                
+                                <a href="/artwork/Stores%20of%20Moldy%20Food%2C%2016x18"><button class='btn btn-default btn-sm mt-3 mr-2' >Stores of Moldy Food, 16x18</button></a>
+                                
+                                <a href="/artwork/Systematic%20Discrepancies%2C%2033x33"><button class='btn btn-default btn-sm mt-3 mr-2' >Systematic Discrepancies, 33x33</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/dezireejordyn/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@dezireejordyn</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Giancarlo Venturini">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Giancarlo Venturini.jpg" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Giancarlo Venturini</h3>
+                            <h6> Giancarlo Venturini is a visual artist from a small town named Boonton, New Jersey. Through painting and sculpture Giancarlo has created works surrounding his experience that stems from the camaraderie of small town life. Having the opportunity to befriend so many diverse people growing up, he started to take an interest in their cultures. In high school one of his best friends started teaching him Polish and this sparked great interest for him. Doing daily lessons, this led him to travel to and learn the language of Poland. Giancarlo now works to promote and preserve a culture that he has admired through painting and sculpture in an attempt to educate while still being humorous. Giancarlo went on to receive his B.F.A. from Rutgers University in 2021. He continues to create work and show in exhibitions. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/Stop%20Series%201a%2C%20%283%2918x24"><button class='btn btn-default btn-sm mt-3 mr-2' >Stop Series 1a, (3)18x24</button></a>
+                                
+                                <a href="/artwork/Stop%20Series%201b%2C%20%283%2918x24"><button class='btn btn-default btn-sm mt-3 mr-2' >Stop Series 1b, (3)18x24</button></a>
+                                
+                                <a href="/artwork/Stop%20Series%201c%2C%20%283%2918x24"><button class='btn btn-default btn-sm mt-3 mr-2' >Stop Series 1c, (3)18x24</button></a>
+                                
+                                <a href="/artwork/%E2%80%9CShut%20up%21%E2%80%9D%20%2C18x24"><button class='btn btn-default btn-sm mt-3 mr-2' >“Shut up!” ,18x24</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/gian_venturini/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@gian_venturini</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Jon Lewis">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Jon Lewis.jpeg" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Jon Lewis</h3>
+                            <h6> Informed by art history, queer theory, and feminist critique, my work as a visual artist function as vessels for contradiction, questioning identity and my own relationship with abstraction. I work primarily in painting, although drawing and its inherent immediacy is always considered, to investigate the physicality of the medium and its eagerness to interact with the body within space. Through explorations in color, form, and space, I am constantly searching for a balance between the planned and spontaneous, how to create structures that not only leave enough room for mistakes, but embrace them. While engaging with the modernist canon of abstraction and challenging the rigidity of a predetermined formalism, it’s my hope to make work that can reject the notion of objectivity and subvert traditional heterosexual masculine conventions. I am interested in creating my own visual vocabulary that can both communicate historically self-constructed queer aesthetics and help to navigate my own relationship with these histories. Camp becomes important to the work, as is the high/low relationship between the convention I am referencing and the queerness of my distortion to it. It is at this intersection of high and low, personal and political, masculine and feminine, that my work exists. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/Purple%20Wash%20Diptych%2C%2016x2"><button class='btn btn-default btn-sm mt-3 mr-2' >Purple Wash Diptych, 16x2</button></a>
+                                
+                                <a href="/artwork/Drip%20Grid%209%20Conjoined%20Canvases%2C%2020x40"><button class='btn btn-default btn-sm mt-3 mr-2' >Drip Grid 9 Conjoined Canvases, 20x40</button></a>
+                                
+                                <a href="/artwork/Drip%20Diamond%20with%20X%2C%2016x20"><button class='btn btn-default btn-sm mt-3 mr-2' >Drip Diamond with X, 16x20</button></a>
+                                
+                                <a href="/artwork/8%20Green%20Zeros%2C%2024x36"><button class='btn btn-default btn-sm mt-3 mr-2' >8 Green Zeros, 24x36</button></a>
+                                
+                                <a href="/artwork/Red-Green%20Lattice%20Attached%20Canvas%2C%2042x38"><button class='btn btn-default btn-sm mt-3 mr-2' >Red-Green Lattice Attached Canvas, 42x38</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/jonlewz/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@jonlewz</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Lauren Krasnoff">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Lauren Krasnoff.PNG" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Lauren Krasnoff</h3>
+                            <h6> My work often depicts my experiences through group portraiture. These two recent paintings explore the irony of group portraits during a time of social distancing. Made while in quarantine, they satirize the present moment as well as society at large. Being isolated has intensified the way I experience visual culture, social media, and the millennial narcissism that goes along with it. We rely on our virtual existence for validation and the false sense of closeness it provides. It feels like social media’s illusion of connectivity already impacted our relationships and created social distancing before all of this. Just like the appearances we keep up, my paintings exist in a space somewhere between real life and a fictional reality. The narratives in my work reference both memory and art history. These pieces present the contemporary action of posing attractively “for the camera” coupled with a historical display of the standards of beauty. By depicting a lack of human interaction, I want to ironically stress the importance of physical and personal connection. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/No%20Diving%2C%2050x44"><button class='btn btn-default btn-sm mt-3 mr-2' >No Diving, 50x44</button></a>
+                                
+                                <a href="/artwork/Beauty%20Parlor%2C%2052x44"><button class='btn btn-default btn-sm mt-3 mr-2' >Beauty Parlor, 52x44</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/lauren.krasnoff/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@lauren.krasnoff</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Liz Pope">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Liz Pope.jpg" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Liz Pope</h3>
+                            <h6> With my paintings I like to use the human figure to convey feelings through body language, bodily textures, or things that appear on the surface of the body like scrapes and bruises. I think the human figure is a really important part of art and my work specifically, but in hopes to expand my language in painting I’ve been working on adding more subjects in my pieces to interact with the figures I paint. My two recent pieces Projected and Broken Medicine Cabinet are two ways I feel anxiety. Projected depicts a person projecting two figures using a projector. The figure connected to the head is infested with moths that are prevented from spreading to the figure connected to the heart through the smoke of a cigarette the person is smoking. I painted this piece thinking about the fear of my anxiety being made up in my head and bad habits I developed trying to soothe the anxiety. Broken Medicine Cabinet depicts a person standing in front of a medicine cabinet with the handle broken off looking into a fogged up mirror with two figures emerging from behind the shower curtain. The person has the figure’s arms enveloping her and a moth standing on her throat. I painted this piece thinking about the effects of not taking my medication and the similar feeling it has to horror movie tropes. With these two pieces I wanted to figure out a way to make a non visual ailment visual through the use of symbolism. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/Broken%20Medicine%20Cabinet%2C%2013x16"><button class='btn btn-default btn-sm mt-3 mr-2' >Broken Medicine Cabinet, 13x16</button></a>
+                                
+                                <a href="/artwork/Projected%2C%2048x60"><button class='btn btn-default btn-sm mt-3 mr-2' >Projected, 48x60</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/lizzzpope/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@lizzzpope</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Serafina Kennedy">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Serafina Kennedy.jpeg" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Serafina Kennedy</h3>
+                            <h6> My paintings are psychological representations of my home, allowing me to translate my internal process through the objects and patterns that are around me during quarantine. The pandemic and the resulting quarantine is obviously a historic and tragic moment.  People will cope with the COVID-19 pandemic in a variety of ways, and my intention with this body of work was to demonstrate and track the evolution of my feelings during this time. I approached each painting in these installations as a part of my visual diary depicting the spaces around me. In this method of documentation, I include objects, patterns, and images from my childhood that I feel a personal connection to. This body of work represents my experiences during quarantine. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/Nostalgia%2C%20%289%298x10"><button class='btn btn-default btn-sm mt-3 mr-2' >Nostalgia, (9)8x10</button></a>
+                                
+                                <a href="/artwork/Anxiety%2C%20%289%298x10"><button class='btn btn-default btn-sm mt-3 mr-2' >Anxiety, (9)8x10</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/serafina_kennedy/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@serafina_kennedy</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+        <div class='row ml-4 mr-4 justify-content-center' id="Shannon Heylin">
+            <!-- Profile Card -->
+            <div class="col-lg-8 mt-4">
+                <div class="card bg-white shadow border-0">
+                    <div class='row' style="margin-left: 0; margin-right: 0;">
+                        <div class="card bg-white col-lg-4 border-0" style="padding: 0;">
+                            <img src="../static/headshots/Shannon Heylin.jpeg" class="card-img"
+                                style="height:100%; object-fit: cover; overflow: hidden;">
+                        </div>
+                        <div class="card mt-4 mb-4 ml-3 mr-3 bg-white col border-0"
+                            style="display: flex; justify-content: center;">
+                            <h3 class='display-3'>Shannon Heylin</h3>
+                            <h6> Color is a predominant aspect of my art. Highly saturated colors are placed next to each other to vibrate and excite the viewer. The canvas becomes a depth of space in a desert or a forest. I am attracted to these natural landscapes because they show the vastness of the natural world. In my paintings the figure is huge but the landscape always dominates in the end. The enlarged figures represent the empowerment of women but also how small we are compared to the world. I use that to give myself perspective and a point of contemplation. Similar to how the figure and the viewer never fully make eye contact. Forcing the viewer to contemplate what the women are thinking about. I want to bring relatable moments like swimming in a lake or walking in the forest but exaggerating those feelings in my paintings by altering the scale. Creating a surrealist scene but still maintaining the connection to the viewer. Looking at my paintings should foster feelings of stillness and wonder. </h6>
+                            <b>Artwork:</b>
+                            <div class='row' style="margin-left: 0; margin-right: 0;">
+                                
+                                <a href="/artwork/Untitled%2C%203x3"><button class='btn btn-default btn-sm mt-3 mr-2' >Untitled, 3x3</button></a>
+                                
+                                <a href="/artwork/Isolation%2C%2018x24"><button class='btn btn-default btn-sm mt-3 mr-2' >Isolation, 18x24</button></a>
+                                
+                                <a href="/artwork/The%20Spirit%20of%20the%20Forest%2C%2016x20"><button class='btn btn-default btn-sm mt-3 mr-2' >The Spirit of the Forest, 16x20</button></a>
+                                
+                            </div>
+                            <div class="mt-3">
+                                <ul class="nav nav-pills align-items-lg-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-icon active"
+                                            href="https://www.instagram.com/shaaeylin/" target="_blank"
+                                            data-toggle="tooltip" title="Instagram" style="background-color: #E1306C;">
+                                            <span class="nav-link-inner--text">@shaaeylin</span>
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Profile Card -->
+        </div>
+        
+    </div>
+    <!-- End Artist Cards -->
+    <!--   Core JS Files   -->
+    <script src="../static/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="../static/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../static/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MGSA Painting Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../static/img/rutgers.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="../static/css/font-awesome.css" rel="stylesheet" />
+    <!-- Theme CSS -->
+    <link href="../static/css/argon-design-system.css" rel="stylesheet" />
+</head>
+
+<body
+    style="background-image: url('../static/galleries/room 4.jpg'); background-repeat: no-repeat; background-size: 100%; background-attachment: fixed; background-position: center center;">
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-default">
+        <div class="container">
+            <a class="navbar-brand" href="/room/1">MGSA Painting Gallery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a class="navbar-brand" href="/room/1" style="color:#172b4d">
+                                MGSA Painting Gallery
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item mt-1 mb-1">
+                        <a href="/artists" class="btn btn-secondary btn-icon">
+                            <span class="btn-inner--icon">
+                                <i class="fa fa-paint-brush mr-2"></i>
+                            </span>
+                            <span class="nav-link-inner--text">Artist Profiles</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 mb-1">
+                        <a href="https://github.com/rardich/MGSA-Painting" target="_blank"
+                            class="btn btn-default btn-icon">
+                            <span class="btn-inner--icon">
+                                <i class="fa fa-github mr-2"></i>
+                            </span>
+                            <span class="nav-link-inner--text">Source Code</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Navbar -->
+
+    <!-- Gallery Navigation Buttons -->
+    
+    <a href="/room/3" class="btn btn-secondary btn-icon"
+        style="position:fixed; top:50%; left:1%;">
+        <span class="btn-inner--icon">
+            <i class="fa fa-arrow-left"></i>
+        </span>
+    </a>
+    <a href="/room/5" class="btn btn-secondary btn-icon"
+        style="position:fixed; top:50%; right:1%;">
+        <span class="btn-inner--icon">
+            <i class="fa fa-arrow-right"></i>
+        </span>
+    </a>
+    
+    <!-- End Gallery Navigation Buttons -->
+
+    <!-- Transparent Gallery Art Buttons-->
+    
+    <a href="/artwork/Anxiety%2C%20%289%298x10"><button
+            style="position:absolute; width: 30%; height: 55%; top: 30%; left: 10%;
+            background-color: Transparent; background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;"></button></a>
+    
+    <a href="/artwork/Stores%20of%20Moldy%20Food%2C%2016x18"><button
+            style="position:absolute; width: 12%; height: 30%; top: 40%; left: 55%;
+            background-color: Transparent; background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;"></button></a>
+    
+    <a href="/artwork/Sad%2C%20Sole%2C%20Fridge%2C%2016x22"><button
+            style="position:absolute; width: 15%; height: 25%; top: 40%; left: 80%;
+            background-color: Transparent; background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;"></button></a>
+    
+    <!-- End Transparent Gallery Art Buttons-->
+
+    <!-- Footer Pagination -->
+    <div style="position: absolute; left: 50%; bottom: 1%">
+        <nav style="position: relative; left: -50%;">
+            <ul class="pagination" style="position: relative; justify-content: center;">
+                
+                
+                <li class="page-item">
+                    <a class="page-link" href="/room/1">1</a>
+                </li>
+                
+                
+                
+                <li class="page-item">
+                    <a class="page-link" href="/room/2">2</a>
+                </li>
+                
+                
+                
+                <li class="page-item">
+                    <a class="page-link" href="/room/3">3</a>
+                </li>
+                
+                
+                
+                <li class="page-item active">
+                    <a class="page-link" href="/room/4">4</a>
+                </li>
+                
+                
+                
+                <li class="page-item">
+                    <a class="page-link" href="/room/5">5</a>
+                </li>
+                
+                
+                
+                <li class="page-item">
+                    <a class="page-link" href="/room/6">6</a>
+                </li>
+                
+                
+                
+                <li class="page-item">
+                    <a class="page-link" href="/room/7">7</a>
+                </li>
+                
+                
+                
+                <li class="page-item">
+                    <a class="page-link" href="/room/8">8</a>
+                </li>
+                
+                
+            </ul>
+        </nav>
+    </div>
+    <!-- End Footer Pagination -->
+
+    <!--   Core JS Files   -->
+    <script src="../static/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="../static/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../static/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript">
+        if (screen.width <= 700) {
+            window.location.replace("/mobile");
+        }
+    </script>
+</body>
+
+</html>

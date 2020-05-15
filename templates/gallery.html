@@ -17,7 +17,7 @@
 </head>
 
 <body
-    style="background-image: url('{{background}}'); background-repeat: no-repeat; background-size: 100%; background-attachment: fixed; background-position: center;">
+    style="background-image: url('{{background}}'); background-repeat: no-repeat; background-size: 100%; background-attachment: fixed; background-position: center center;">
     <!-- Top Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-default">
         <div class="container">
@@ -112,8 +112,11 @@
     <!-- End Gallery Navigation Buttons -->
 
     <!-- Transparent Gallery Art Buttons-->
-    <a href="{{url_for('art', art=artwork)}}"><button
-            style="position:absolute; width: 20em; height: 20em; background-color: Transparent; background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;"></button></a>
+    {% for art in artwork["room" + page|string] %}
+    <a href="{{url_for('art', art=art[0])}}"><button
+            style="position:absolute; width: {{art[1]}}%; height: {{art[2]}}%; top: {{art[3]}}%; left: {{art[4]}}%;
+            background-color: Transparent; background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;"></button></a>
+    {% endfor %}
     <!-- End Transparent Gallery Art Buttons-->
 
     <!-- Footer Pagination -->

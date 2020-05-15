@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MGSA Painting Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../static/img/rutgers.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="../static/css/font-awesome.css" rel="stylesheet" />
+    <!-- Theme CSS -->
+    <link href="../static/css/argon-design-system.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-default">
+        <div class="container">
+            <a class="navbar-brand" href="/room/1">MGSA Painting Gallery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a class="navbar-brand" href="/room/1" style="color:#172b4d">
+                                MGSA Painting Gallery
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item mt-1 mb-1">
+                        <a href="/artists" class="btn btn-secondary btn-icon">
+                            <span class="btn-inner--icon">
+                                <i class="fa fa-paint-brush mr-2"></i>
+                            </span>
+                            <span class="nav-link-inner--text">Artist Profiles</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 mb-1">
+                        <a href="https://github.com/rardich/MGSA-Painting" target="_blank" class="btn btn-default btn-icon">
+                            <span class="btn-inner--icon">
+                                <i class="fa fa-github mr-2"></i>
+                            </span>
+                            <span class="nav-link-inner--text">Source Code</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Navbar -->
+
+    <!-- Artwork -->
+    <div class="container mb-3 justify-content-center">
+        <div class="row justify-content-center ml-4 mr-4">
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/From%20Outside%2C%2036x48">
+                        <img src="../static/artwork/bri 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>From Outside, 36x48 </b></h6>
+                            <h6> <b>Briana Mclaurin</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/From%20Inside%2C%2036x48">
+                        <img src="../static/artwork/bri 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>From Inside, 36x48 </b></h6>
+                            <h6> <b>Briana Mclaurin</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/From%20Both%20Outside%20and%20Inside%2C%2036x48">
+                        <img src="../static/artwork/bri 3.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>From Both Outside and Inside, 36x48 </b></h6>
+                            <h6> <b>Briana Mclaurin</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Kenny%20and%20Co.%2C%2016x20">
+                        <img src="../static/artwork/david 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Kenny and Co., 16x20 </b></h6>
+                            <h6> <b>David Yang</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Ryan%2C%2024x36">
+                        <img src="../static/artwork/david 4.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Ryan, 24x36 </b></h6>
+                            <h6> <b>David Yang</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Dan-Anh%2C%2024x36">
+                        <img src="../static/artwork/david 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Dan-Anh, 24x36 </b></h6>
+                            <h6> <b>David Yang</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Ye%20Ye%20and%20Nai%20Nai%2C%2024x36">
+                        <img src="../static/artwork/david 3.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Ye Ye and Nai Nai, 24x36 </b></h6>
+                            <h6> <b>David Yang</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Disposable%20Bodies%2C%2016x22">
+                        <img src="../static/artwork/desiree 4.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Disposable Bodies, 16x22 </b></h6>
+                            <h6> <b>Deziree Jordyn</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Sad%2C%20Sole%2C%20Fridge%2C%2016x22">
+                        <img src="../static/artwork/desiree 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Sad, Sole, Fridge, 16x22 </b></h6>
+                            <h6> <b>Deziree Jordyn</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Stores%20of%20Moldy%20Food%2C%2016x18">
+                        <img src="../static/artwork/desiree 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Stores of Moldy Food, 16x18 </b></h6>
+                            <h6> <b>Deziree Jordyn</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Systematic%20Discrepancies%2C%2033x33">
+                        <img src="../static/artwork/desiree 3.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Systematic Discrepancies, 33x33 </b></h6>
+                            <h6> <b>Deziree Jordyn</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Stop%20Series%201a%2C%20%283%2918x24">
+                        <img src="../static/artwork/giancarlo 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Stop Series 1a, (3)18x24 </b></h6>
+                            <h6> <b>Giancarlo Venturini</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Stop%20Series%201b%2C%20%283%2918x24">
+                        <img src="../static/artwork/giancarlo 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Stop Series 1b, (3)18x24 </b></h6>
+                            <h6> <b>Giancarlo Venturini</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Stop%20Series%201c%2C%20%283%2918x24">
+                        <img src="../static/artwork/giancarlo 3.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Stop Series 1c, (3)18x24 </b></h6>
+                            <h6> <b>Giancarlo Venturini</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/%E2%80%9CShut%20up%21%E2%80%9D%20%2C18x24">
+                        <img src="../static/artwork/giancarlo 4.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>“Shut up!” ,18x24 </b></h6>
+                            <h6> <b>Giancarlo Venturini</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Purple%20Wash%20Diptych%2C%2016x2">
+                        <img src="../static/artwork/jon 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Purple Wash Diptych, 16x2 </b></h6>
+                            <h6> <b>Jon Lewis</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Drip%20Grid%209%20Conjoined%20Canvases%2C%2020x40">
+                        <img src="../static/artwork/jon 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Drip Grid 9 Conjoined Canvases, 20x40 </b></h6>
+                            <h6> <b>Jon Lewis</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Drip%20Diamond%20with%20X%2C%2016x20">
+                        <img src="../static/artwork/jon 4.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Drip Diamond with X, 16x20 </b></h6>
+                            <h6> <b>Jon Lewis</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/8%20Green%20Zeros%2C%2024x36">
+                        <img src="../static/artwork/jon 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>8 Green Zeros, 24x36 </b></h6>
+                            <h6> <b>Jon Lewis</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Red-Green%20Lattice%20Attached%20Canvas%2C%2042x38">
+                        <img src="../static/artwork/jon 5.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Red-Green Lattice Attached Canvas, 42x38 </b></h6>
+                            <h6> <b>Jon Lewis</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/No%20Diving%2C%2050x44">
+                        <img src="../static/artwork/lauren 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>No Diving, 50x44 </b></h6>
+                            <h6> <b>Lauren Krasnoff</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Beauty%20Parlor%2C%2052x44">
+                        <img src="../static/artwork/lauren 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Beauty Parlor, 52x44 </b></h6>
+                            <h6> <b>Lauren Krasnoff</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Broken%20Medicine%20Cabinet%2C%2013x16">
+                        <img src="../static/artwork/liz 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Broken Medicine Cabinet, 13x16 </b></h6>
+                            <h6> <b>Liz Pope</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Projected%2C%2048x60">
+                        <img src="../static/artwork/liz 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Projected, 48x60 </b></h6>
+                            <h6> <b>Liz Pope</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Nostalgia%2C%20%289%298x10">
+                        <img src="../static/artwork/sera 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Nostalgia, (9)8x10 </b></h6>
+                            <h6> <b>Serafina Kennedy</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Anxiety%2C%20%289%298x10">
+                        <img src="../static/artwork/sera 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Anxiety, (9)8x10 </b></h6>
+                            <h6> <b>Serafina Kennedy</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Untitled%2C%203x3">
+                        <img src="../static/artwork/shannon 2.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Untitled, 3x3 </b></h6>
+                            <h6> <b>Shannon Heylin</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/Isolation%2C%2018x24">
+                        <img src="../static/artwork/shannon 3.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>Isolation, 18x24 </b></h6>
+                            <h6> <b>Shannon Heylin</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="/artwork/The%20Spirit%20of%20the%20Forest%2C%2016x20">
+                        <img src="../static/artwork/shannon 1.jpg" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>The Spirit of the Forest, 16x20 </b></h6>
+                            <h6> <b>Shannon Heylin</b></h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End Artwork -->
+    <!--   Core JS Files   -->
+    <script src="../static/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="../static/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../static/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript">
+        if (screen.width > 700) {
+            window.location.replace("/");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,19 +1,59 @@
 from flask import Flask, render_template, url_for, flash, redirect
+from flask_frozen import Freezer
 
 app = Flask(__name__)
+
+freezer = Freezer(app)
 
 # TODO Offload this to JSON file
 # Hardcoded positions, sizes, and links for art in galleries
 artwork = {
     # Room #: [Artwork, Width, Height, Top, Left]
-    "room1": [["No Diving, 50x44"], ["Kenny and Co., 16x20"],["Ryan, 24x36"]],
-    "room2": [["Beauty Parlor, 52x44"],["Ye Ye and Nai Nai, 24x36"],["Dan-Anh, 24x36"]],
-    "room3": [["Red/Green Lattice Attached Canvas, 42x38"],["Drip Diamond with X, 16x20"],["Purple Wash Diptych, 16x2"],["8 Green Zeros, 24x36"],["Drip Grid 9 Conjoined Canvases, 20x40"]],
-    "room4": [["Anxiety, (9)8x10"],["Stores of Moldy Food, 16x18"],["Sad, Sole, Fridge, 16x22"]],
-    "room5": [["Systematic Discrepancies, 33x33"],["Disposable Bodies, 16x22"],["Nostalgia, (9)8x10"]],
-    "room6": [["From Outside, 36x48"],["From Inside, 36x48"]],
-    "room7": [["Projected, 48x60"],["Broken Medicine Cabinet, 13x16"],["From Both Outside and Inside, 36x48"]],
-    "room8": [["Stop Series 1a, (3)18x24"],["Stop Series 1b, (3)18x24"],["Stop Series 1c, (3)18x24"],["“Shut up!” ,18x24"],["The Spirit of the Forest, 16x20"],["Untitled, 3x3"],["Isolation, 18x24"]],
+    "room1": [  
+        ["No Diving, 50x44", 22, 40, 25, 25], 
+        ["Kenny and Co., 16x20", 9, 18, 40, 65],
+        ["Ryan, 24x36", 9, 24, 38, 85]
+    ],
+    "room2": [
+        ["Beauty Parlor, 52x44", 22, 50, 17, 15],
+        ["Ye Ye and Nai Nai, 24x36", 12, 35, 28, 48],
+        ["Dan-Anh, 24x36", 12, 35, 25, 74]
+    ],
+    "room3": [
+        ["Red-Green Lattice Attached Canvas, 42x38", 20,40,25,2],
+        ["Drip Diamond with X, 16x20", 10,20,40,28],
+        ["Purple Wash Diptych, 16x2", 15,20,40,45],
+        ["8 Green Zeros, 24x36", 12,30,35,68],
+        ["Drip Grid 9 Conjoined Canvases, 20x40", 10,35,32,86]
+    ],
+    "room4": [
+        ["Anxiety, (9)8x10", 30,55,30,10],
+        ["Stores of Moldy Food, 16x18", 12,30,40,55],
+        ["Sad, Sole, Fridge, 16x22", 15,25,40,80]
+    ],
+    "room5": [
+        ["Systematic Discrepancies, 33x33", 25,55,22,6],
+        ["Disposable Bodies, 16x22", 12,32,34,43],
+        ["Nostalgia, (9)8x10", 27,50,25,70]
+    ],
+    "room6": [
+        ["From Outside, 36x48", 23,40,30,3],
+        ["From Inside, 36x48", 20,30,35,50]
+    ],
+    "room7": [
+        ["Projected, 48x60", 35,70,12,5],
+        ["Broken Medicine Cabinet, 13x16", 10,20,42,48],
+        ["From Both Outside and Inside, 36x48", 32,48,28,65]
+    ],
+    "room8": [
+        ["Stop Series 1a, (3)18x24", 10,28,45,5],
+        ["Stop Series 1b, (3)18x24", 10,22,48,20],
+        ["Stop Series 1c, (3)18x24", 8,18,50,33],
+        ["“Shut up!” ,18x24", 6,15,51,45],
+        ["The Spirit of the Forest, 16x20", 6,15,51,55],
+        ["Untitled, 3x3", 15,30,42,65],
+        ["Isolation, 18x24", 8,25,47,85]
+    ],
     "links": {
         "From Outside, 36x48": "../static/artwork/bri 1.jpg",
         "From Inside, 36x48": "../static/artwork/bri 2.jpg",
@@ -34,7 +74,7 @@ artwork = {
         "Drip Grid 9 Conjoined Canvases, 20x40": "../static/artwork/jon 2.jpg",
         "Drip Diamond with X, 16x20": "../static/artwork/jon 4.jpg", 
         "8 Green Zeros, 24x36": "../static/artwork/jon 1.jpg", 
-        "Red/Green Lattice Attached Canvas, 42x38": "../static/artwork/jon 5.jpg",
+        "Red-Green Lattice Attached Canvas, 42x38": "../static/artwork/jon 5.jpg",
         "No Diving, 50x44": "../static/artwork/lauren 1.jpg", 
         "Beauty Parlor, 52x44": "../static/artwork/lauren 2.jpg",
         "Broken Medicine Cabinet, 13x16": "../static/artwork/liz 1.jpg", 
@@ -65,7 +105,7 @@ artwork = {
         "Drip Grid 9 Conjoined Canvases, 20x40": "Jon Lewis",
         "Drip Diamond with X, 16x20": "Jon Lewis", 
         "8 Green Zeros, 24x36": "Jon Lewis", 
-        "Red/Green Lattice Attached Canvas, 42x38": "Jon Lewis",
+        "Red-Green Lattice Attached Canvas, 42x38": "Jon Lewis",
         "No Diving, 50x44": "Lauren Krasnoff", 
         "Beauty Parlor, 52x44": "Lauren Krasnoff",
         "Broken Medicine Cabinet, 13x16": "Liz Pope", 
@@ -112,7 +152,7 @@ profiles = [
     {
         "name": "Jon Lewis",
         "bio": "Informed by art history, queer theory, and feminist critique, my work as a visual artist function as vessels for contradiction, questioning identity and my own relationship with abstraction. I work primarily in painting, although drawing and its inherent immediacy is always considered, to investigate the physicality of the medium and its eagerness to interact with the body within space. Through explorations in color, form, and space, I am constantly searching for a balance between the planned and spontaneous, how to create structures that not only leave enough room for mistakes, but embrace them. While engaging with the modernist canon of abstraction and challenging the rigidity of a predetermined formalism, it’s my hope to make work that can reject the notion of objectivity and subvert traditional heterosexual masculine conventions. I am interested in creating my own visual vocabulary that can both communicate historically self-constructed queer aesthetics and help to navigate my own relationship with these histories. Camp becomes important to the work, as is the high/low relationship between the convention I am referencing and the queerness of my distortion to it. It is at this intersection of high and low, personal and political, masculine and feminine, that my work exists.",
-        "artwork": ["Purple Wash Diptych, 16x2", "Drip Grid 9 Conjoined Canvases, 20x40", "Drip Diamond with X, 16x20", "8 Green Zeros, 24x36", "Red/Green Lattice Attached Canvas, 42x38"],
+        "artwork": ["Purple Wash Diptych, 16x2", "Drip Grid 9 Conjoined Canvases, 20x40", "Drip Diamond with X, 16x20", "8 Green Zeros, 24x36", "Red-Green Lattice Attached Canvas, 42x38"],
         "instagram": "jonlewz",
         "picture": "../static/headshots/Jon Lewis.jpeg"
     },
@@ -149,7 +189,7 @@ profiles = [
 @app.route('/')
 @app.route('/room/<id>')
 def gallery(id=1):
-    return render_template('gallery.html', page = int(id), totalpages = 8, background=f"../static/galleries/room {id}.jpg", artwork=artwork[f"room{id}"])
+    return render_template('gallery.html', page = int(id), totalpages = 8, background=f"../static/galleries/room {id}.jpg", artwork=artwork)
 
 @app.route('/mobile')
 def mobile():
@@ -164,4 +204,5 @@ def art(art):
     return render_template('art.html', art=art, profiles=profiles, artwork=artwork)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    freezer.freeze()
