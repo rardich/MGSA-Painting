@@ -1,5 +1,4 @@
 from flask import Flask, render_template, url_for, flash, redirect
-from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 
@@ -204,5 +203,4 @@ def art(art):
 
 if __name__ == '__main__':
     # app.run(debug=True)
-    http_server = WSGIServer(('', 5000), app)
-    http_server.serve_forever()
+    app.run(host='0.0.0.0', port=80)
