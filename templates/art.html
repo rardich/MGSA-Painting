@@ -65,34 +65,36 @@
         </div>
     </nav>
     <!-- End Top Navbar -->
-
+    
     <!-- Artwork -->
-    <div class="container mt-4">
-        <div class="card mb-3 bg-white shadow border-0">
-            <div class="" style="display: flex; justify-content: center; text-align: center">
-                <a href="{{artwork['links'][art]}}"><img src="{{artwork['links'][art]}}" style="width: 100%; max-width: 100%; height: auto;"></a>
-            </div>
-            <div class="mt-3" style="display: flex; justify-content: center; text-align: center">
-                <h6> <b>{{art}} </b></h6>
-            </div>
-            <div class="mt-2" style="display: flex; justify-content: center; text-align: center">
-                <h6> <b>{{artwork['artists'][art]}} </b></h6>
-            </div>
-            <div class="mt-2" style="display: flex; justify-content: center; text-align: center">
-                Also by {{artwork['artists'][art].split()[0]}}:
-            </div>
-            <div class='row mb-3'
-                style="display: flex; justify-content: center; text-align: center; margin-left: 0; margin-right: 0;">
-                {% for i in range(profiles|length) %}
-                {% if profiles[i]["name"] == artwork['artists'][art] %}
-                {% for artwork in profiles[i]["artwork"] %}
-                {% if artwork != art%}
-                <a href="{{url_for('art', art=artwork)}}"><button
-                        class='btn btn-default btn-sm mt-3 mr-2'>{{artwork}}</button></a>
-                {% endif %}
-                {% endfor %}
-                {% endif %}
-                {% endfor %}
+    <div class="container mb-3 justify-content-center">
+        <div class="row justify-content-center ml-4 mr-4">
+            <div class="col-lg-6 card mt-3 bg-white shadow border-0" style="padding: 0;">
+                <div class="mr-auto" style="text-align: center">
+                    <a href="{{artwork['links'][art]}}">
+                        <img src="{{artwork['links'][art]}}" width="100%" height="400" style="max-width: 100%; height: auto;">
+                        <div class="mt-2">
+                            <h6> <b>{{art}} </b></h6>
+                            <h6> <b>{{artwork['artists'][art]}}</b></h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="mt-2" style="display: flex; justify-content: center; text-align: center">
+                    Also by {{artwork['artists'][art].split()[0]}}:
+                </div>
+                <div class='row mb-3 mr-2 ml-2'
+                    style="display: flex; justify-content: center; text-align: center; margin-left: 0; margin-right: 0;">
+                    {% for i in range(profiles|length) %}
+                    {% if profiles[i]["name"] == artwork['artists'][art] %}
+                    {% for artwork in profiles[i]["artwork"] %}
+                    {% if artwork != art%}
+                    <a href="{{url_for('art', art=artwork)}}"><button
+                            class='btn btn-default btn-sm mt-3 mr-2'>{{artwork}}</button></a>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
