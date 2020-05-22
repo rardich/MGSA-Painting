@@ -18,59 +18,58 @@
 
 <body>
     <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-default">
-        <div class="container">
-            <a class="navbar-brand" href="{{url_for('gallery', id=1)}}">
-                <div><b>Pandemic Paintings:</b></div>
-                <p style="font-size: small; margin-bottom: 0;">From Civic Square to Quarantine</p>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
-                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-default">
-                <div class="navbar-collapse-header">
-                    <div class="row">
-                        <div class="col-6 collapse-brand">
-                            <a class="navbar-brand" href="{{url_for('gallery', id=1)}}" style="color:#172b4d">
-                                MGSA Painting Gallery
-                            </a>
-                        </div>
-                        <div class="col-6 collapse-close">
-                            <button type="button" class="navbar-toggler" data-toggle="collapse"
-                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
+    <nav class="navbar navbar-expand-lg navbar-transparent bg-default">
+        <a class="navbar-brand" href="{{url_for('gallery', id=1)}}">
+            <div><b style="font-size: medium; color: #172b4d">Views from Quarantine</b></div>
+            <b style="font-size: small; margin-bottom: 0; color: #172b4d">An Online Exhibition</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+            aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-bars" style="color: #172b4d"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a class="navbar-brand" href="{{url_for('gallery', id=1)}}" style="color:#172b4d">
+                            <div><b style="font-size: medium;">Views from Quarantine</b></div>
+                            <b style="font-size: small; margin-bottom: 0;">An Online Exhibition</b>
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse"
+                            data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item mt-1 mb-1">
-                        <a href="{{url_for('artists')}}" class="btn btn-secondary btn-icon">
-                            <span class="btn-inner--icon">
-                                <i class="fa fa-paint-brush mr-2"></i>
-                            </span>
-                            <span class="nav-link-inner--text">Artist Profiles</span>
-                        </a>
-                    </li>
-                    <li class="nav-item mt-1 mb-1">
-                        <a href="https://github.com/rardich/MGSA-Painting" target="_blank" class="btn btn-default btn-icon">
-                            <span class="btn-inner--icon">
-                                <i class="fa fa-github mr-2"></i>
-                            </span>
-                            <span class="nav-link-inner--text">Source Code</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
+            <ul class="navbar-nav ml-lg-auto" style="align-items: center; margin-left: -5%;">
+                <li class="nav-item mt-1 mb-1">
+                    <a href="{{url_for('artists')}}" class="btn btn-transparent btn-icon">
+                        <span class="btn-inner--icon">
+                            <i class="fa fa-paint-brush mr-2" style="color: #172b4d"></i>
+                        </span>
+                        <span class="nav-link-inner--text" style="color: #172b4d">Artist Profiles</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-1 mb-1">
+                    <a href="https://github.com/rardich/MGSA-Painting" target="_blank" class="btn btn-transparent btn-icon">
+                        <span class="btn-inner--icon">
+                            <i class="fa fa-github mr-2" style="color: #172b4d"></i>
+                        </span>
+                        <span class="nav-link-inner--text" style="color: #172b4d">Source Code</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- End Top Navbar -->
     
     <!-- Artwork -->
-    <div class="container mb-3 justify-content-center">
+    <div class="container mb-3 mt-6 justify-content-center">
         <div class="row justify-content-center ml-4 mr-4">
             <div class="col-lg-6 card mt-3 bg-white shadow border-0" style="padding: 0;">
                 <div class="mr-auto" style="text-align: center">

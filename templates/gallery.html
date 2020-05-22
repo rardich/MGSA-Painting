@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Pandemic Painting Gallery</title>
+    <title>Paintings from Quarantine</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -19,55 +19,29 @@
 <body
     style="background-image: url('{{background}}'); background-repeat: no-repeat; background-size: 100%; background-attachment: fixed; background-position: center center;">
     <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-default">
-        <div class="container">
-            <a class="navbar-brand" href="{{url_for('gallery', id=1)}}">
-                <div><b>Pandemic Paintings:</b></div>
-                <p style="font-size: small; margin-bottom: 0;">From Civic Square to Quarantine</p>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
-                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-default">
-                <div class="navbar-collapse-header">
-                    <div class="row">
-                        <div class="col-6 collapse-brand">
-                            <a class="navbar-brand" href="{{url_for('gallery', id=1)}}" style="color:#172b4d">
-                                MGSA Painting Gallery
-                            </a>
-                        </div>
-                        <div class="col-6 collapse-close">
-                            <button type="button" class="navbar-toggler" data-toggle="collapse"
-                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item mt-1 mb-1">
-                        <a href="{{url_for('artists')}}" class="btn btn-secondary btn-icon">
-                            <span class="btn-inner--icon">
-                                <i class="fa fa-paint-brush mr-2"></i>
-                            </span>
-                            <span class="nav-link-inner--text">Artist Profiles</span>
-                        </a>
-                    </li>
-                    <li class="nav-item mt-1 mb-1">
-                        <a href="https://github.com/rardich/MGSA-Painting" target="_blank"
-                            class="btn btn-default btn-icon">
-                            <span class="btn-inner--icon">
-                                <i class="fa fa-github mr-2"></i>
-                            </span>
-                            <span class="nav-link-inner--text">Source Code</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-transparent bg-default">
+        <a class="navbar-brand" href="{{url_for('gallery', id=1)}}">
+            <div><b style="font-size: medium;">Views from Quarantine</b></div>
+            <b style="font-size: small; margin-bottom: 0;">An Online Exhibition</b>
+        </a>
+        <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item mt-1 mb-1">
+                <a href="{{url_for('artists')}}" class="btn btn-transparent btn-icon">
+                    <span class="btn-inner--icon">
+                        <i class="fa fa-paint-brush mr-2" style="color: white;"></i>
+                    </span>
+                    <span class="nav-link-inner--text" style="color: white;">Artist Profiles</span>
+                </a>
+            </li>
+            <li class="nav-item mt-1 mb-1">
+                <a href="https://github.com/rardich/MGSA-Painting" target="_blank" class="btn btn-transparent btn-icon">
+                    <span class="btn-inner--icon">
+                        <i class="fa fa-github mr-2" style="color: white;"></i>
+                    </span>
+                    <span class="nav-link-inner--text" style="color: white;">Source Code</span>
+                </a>
+            </li>
+        </ul>
     </nav>
     <!-- End Top Navbar -->
 
@@ -123,7 +97,7 @@
     <!-- End Transparent Gallery Art Buttons-->
 
     <!-- Footer Pagination -->
-    <div style="position: absolute; left: 50%; bottom: 5%">
+    <div style="position: absolute; left: 50%; bottom: 0%">
         <nav style="position: relative; left: -50%;">
             <ul class="pagination" style="position: relative; justify-content: center;">
                 {% for i in range(1,9) %}
@@ -139,19 +113,15 @@
                 {% endfor %}
             </ul>
         </nav>
+        <div style="text-align: center; position: relative; left: -50%;">
+            <div class="alert alert-transparent mt--2">
+                <strong>Click on each artwork for more</strong>
+            </div>
+        </div>
     </div>
     <!-- End Footer Pagination -->
-
-    <!-- Clickable Images Banner -->
-    {% if page == 1 %}
-    <div class="alert alert-info alert-dismissible fade show" role="alert">
-        <strong>Click on Gallery Images!</strong> See the full size image, the artist, and other works by clicking on images in the gallery
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    <!-- End Clickable Images Banner-->
-    {% endif %}
+    
+    
 
     <!--   Core JS Files   -->
     <script src="../static/js/core/jquery.min.js" type="text/javascript"></script>
